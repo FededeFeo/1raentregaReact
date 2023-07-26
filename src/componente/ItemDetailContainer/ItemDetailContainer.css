@@ -1,0 +1,7 @@
+.ItemDetailContainer {
+    display: flex; /* Utilizamos flexbox para centrar la tarjeta */
+    justify-content: center; /* Centramos horizontalmente la tarjeta */
+    align-items: center; /* Centramos verticalmente la tarjeta */
+    
+  margin: 70px;
+}

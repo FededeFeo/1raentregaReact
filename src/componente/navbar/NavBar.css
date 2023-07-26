@@ -1,0 +1,101 @@
+/* Agrega estas clases al CSS */
+
+.NavBar {
+  position: relative; /* Hacemos que la posición de la NavBar sea relativa */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 10px;
+}
+
+.tituloIndex {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  text-shadow: 0px 0px 4px rgb(5, 5, 5);
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.Categories {
+  display: flex;
+  align-items: center;
+  
+}
+
+.Option {
+  text-decoration: none;
+  color: white;
+  margin: 30px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.Option:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+.ActiveOption {
+  background-color: darkgray;
+  color: black;
+  text-decoration: none;
+  border: none;
+    background-color: transparent;
+    padding: 8px 16px;
+}
+
+/* Agrega las siguientes clases para posicionar el CartWidget */
+.CartWidgetContainer {
+  position: absolute;
+  top: 10px; /* Ajusta el valor '10px' según lo desees */
+  right: 10px; /* Ajusta el valor '10px' según lo desees */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.CartWidgetIcon {
+  width: 24px; /* Ajusta el tamaño del ícono según lo desees */
+  height: 24px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .NavBar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Titulo {
+    font-size: 2rem;
+  }
+
+  .Categories {
+    margin-top: 10px;
+  }
+
+  .Option {
+    margin: 5px;
+  }
+
+  /* Agrega las reglas de estilo para el CartWidget en modo responsive (opcional) */
+  .CartWidgetContainer {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+  }
+}

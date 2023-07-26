@@ -1,0 +1,25 @@
+/* Estilos para el contenedor del CarritoWidget */
+div.CartWidget {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  /* Estilos para la imagen del carrito */
+  .CartWidget img {
+    width: 30px;
+    height: auto;
+  }
+  
+  /* Estilos para el número del carrito */
+  .CartWidget span {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+  }

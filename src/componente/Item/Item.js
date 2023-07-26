@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 
 const Item = ({id, name, img, price, stock}) => {
     return (
+        <div className= "productos">
         <article className="CardItem">
+            
             <header className="Header">
                 <h2 className="ItemHeader">
                     {name}
@@ -21,11 +23,13 @@ const Item = ({id, name, img, price, stock}) => {
                 <p className="Info">
                     Stock disponible: {stock}
                 </p>
+                <div className='ItemFooter'>
+                <Link to={`/item/${id}`}className='OptionDetalle'>Ver detalle</Link>
+            </div>
             </section>
-            <footer className='ItemFooter'>
-                <Link to={`/item/${id}`}className='Option'>Ver detalle</Link>
-            </footer>
+            
         </article>
+        </div>
     )
 }
 
