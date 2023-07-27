@@ -55,11 +55,10 @@
     padding: 8px 16px;
 }
 
-/* Agrega las siguientes clases para posicionar el CartWidget */
 .CartWidgetContainer {
   position: absolute;
-  top: 10px; /* Ajusta el valor '10px' según lo desees */
-  right: 10px; /* Ajusta el valor '10px' según lo desees */
+  top: 10px; 
+  right: 10px; 
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -68,7 +67,7 @@
 }
 
 .CartWidgetIcon {
-  width: 24px; /* Ajusta el tamaño del ícono según lo desees */
+  width: 24px; 
   height: 24px;
   margin-right: 5px;
 }
@@ -91,7 +90,6 @@
     margin: 5px;
   }
 
-  /* Agrega las reglas de estilo para el CartWidget en modo responsive (opcional) */
   .CartWidgetContainer {
     position: relative;
     top: 0;

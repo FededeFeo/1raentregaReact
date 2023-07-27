@@ -1,13 +1,18 @@
-import './CartWidget.css'; // Agrega el archivo CSS para CartWidget
-import carritoVacio from './assets/carritoVacio.png';
+import './CartWidget.css'; 
+import cart from './assets/carritoVacio.png'
+import { useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
+import { Link } from 'react-router-dom'
 
 const CartWidget = () => {
-  return (
-    <div className="CartWidgetContainer">
-      <img src={carritoVacio} alt="cart-widget" className="CartWidgetIcon" />
-      <span>0</span>
-    </div>
-  );
-};
+  const { totalQuantity } = useContext(CartContext)
 
-export default CartWidget;
+  return (
+    <Link to='/cart' className='CartWidget' style={{ display: totalQuantity > 0 ? 'block' : 'none'}}>
+      <img className='CartImg' src={cart} alt='cart-widget'/>
+    {totalQuantity}
+    </Link>
+  )
+}
+
+export default CartWidget
